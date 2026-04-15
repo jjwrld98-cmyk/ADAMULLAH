@@ -1,205 +1,271 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Adamullah | Official Club Website</title>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700;800&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
-    <style>
-        :root {
-            --primary: #00cc66;
-            --primary-dark: #004d00;
-            --accent: #009933;
-            --dark-bg: #050a05;
-            --card-bg: #111a11;
-            --text-light: #e6f2e6;
-            --text-muted: #a0b0a0;
-            --gold: #ffcc00;
-            --red: #ff4d4d;
-            --transition: all 0.4s cubic-bezier(0.165, 0.84, 0.44, 1);
-        }
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Adamullah | Official Club Website</title>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+<style>
+:root {
+--primary: #00cc66;
+--primary-dark: #004d00;
+--accent: #009933;
+--dark-bg: #050a05;
+--card-bg: #111a11;
+--text-light: #e6f2e6;
+--text-muted: #a0b0a0;
+--gold: #ffcc00;
+--red: #ff4d4d;
+--transition: all 0.4s cubic-bezier(0.165, 0.84, 0.44, 1);
+}
 
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-            scroll-behavior: smooth;
-        }
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        scroll-behavior: smooth;
+    }
 
-        body {
-            font-family: 'Poppins', sans-serif;
-            background-color: var(--dark-bg);
-            color: var(--text-light);
-            line-height: 1.6;
-            overflow-x: hidden;
-        }
+    body {
+        font-family: 'Poppins', sans-serif;
+        background-color: var(--dark-bg);
+        color: var(--text-light);
+        line-height: 1.6;
+        overflow-x: hidden;
+    }
 
-        nav {
-            position: fixed;
-            top: 0;
-            width: 100%;
-            background: rgba(5, 10, 5, 0.95);
-            backdrop-filter: blur(10px);
-            z-index: 1000;
-            padding: 15px 0;
-            border-bottom: 1px solid rgba(0, 204, 104, 0.2);
-        }
+    /* Navigation */
+    nav {
+        position: fixed;
+        top: 0;
+        width: 100%;
+        background: rgba(5, 10, 5, 0.95);
+        backdrop-filter: blur(10px);
+        z-index: 1000;
+        padding: 20px 0;
+        border-bottom: 1px solid rgba(0, 204, 104, 0.2);
+    }
 
-        .nav-container {
-            max-width: 1200px;
-            margin: 0 auto;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            padding: 0 20px;
-        }
+    .nav-container {
+        max-width: 1200px;
+        margin: 0 auto;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 0 20px;
+    }
 
-        .logo {
-            font-size: 22px;
-            font-weight: 800;
-            text-transform: uppercase;
-            letter-spacing: 2px;
-            color: var(--primary);
-            text-decoration: none;
-        }
+    .logo {
+        font-size: 24px;
+        font-weight: 800;
+        text-transform: uppercase;
+        letter-spacing: 2px;
+        color: var(--primary);
+        text-decoration: none;
+    }
 
-        .nav-links {
-            display: flex;
-            gap: 20px;
-            list-style: none;
-        }
+    .nav-links {
+        display: flex;
+        gap: 30px;
+        list-style: none;
+    }
 
-        .nav-links a {
-            color: var(--text-light);
-            text-decoration: none;
-            font-weight: 600;
-            font-size: 13px;
-            text-transform: uppercase;
-            transition: var(--transition);
-        }
+    .nav-links a {
+        color: var(--text-light);
+        text-decoration: none;
+        font-weight: 600;
+        font-size: 14px;
+        text-transform: uppercase;
+        transition: var(--transition);
+    }
 
-        header {
-            height: 70vh;
-            background: linear-gradient(rgba(0,0,0,0.8), rgba(0,0,0,0.8)), url('https://images.unsplash.com/photo-1574629810360-7efbbe195018?ixlib=rb-4.0.3&auto=format&fit=crop&w=1920&q=80');
-            background-size: cover;
-            background-position: center;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-            text-align: center;
-            padding: 0 20px;
-            margin-top: 60px;
-            border-bottom: 4px solid var(--primary);
-        }
+    /* Hero Section */
+    header {
+        height: 70vh;
+        background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url('https://images.unsplash.com/photo-1574629810360-7efbbe195018?ixlib=rb-4.0.3&auto=format&fit=crop&w=1920&q=80');
+        background-size: cover;
+        background-position: center;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        padding: 0 20px;
+        margin-bottom: 60px;
+        border-bottom: 4px solid var(--primary);
+    }
 
-        header h1 {
-            font-size: clamp(40px, 8vw, 100px);
-            font-weight: 800;
-            text-transform: uppercase;
-            line-height: 1;
-            background: linear-gradient(to bottom, #ffffff, #00cc66);
-            -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
-        }
+    header h1 {
+        font-size: clamp(48px, 10vw, 100px);
+        font-weight: 800;
+        text-transform: uppercase;
+        margin: 0;
+        letter-spacing: -2px;
+        line-height: 1;
+        background: linear-gradient(to bottom, #ffffff, #00cc66);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+    }
 
-        section {
-            max-width: 1100px;
-            margin: 60px auto;
-            padding: 0 20px;
-        }
+    header p {
+        font-size: clamp(16px, 2vw, 24px);
+        color: var(--text-light);
+        max-width: 700px;
+        font-weight: 300;
+        margin-top: 15px;
+        opacity: 0.9;
+    }
 
-        .content-box {
-            background: var(--card-bg);
-            padding: 30px;
-            border-radius: 20px;
-            border: 1px solid rgba(255,255,255,0.05);
-            box-shadow: 0 20px 40px rgba(0,0,0,0.4);
-        }
+    /* Layout Sections */
+    section {
+        max-width: 1100px;
+        margin: 0 auto 80px auto;
+        padding: 0 20px;
+    }
 
-        h2 {
-            font-size: 28px;
-            margin-bottom: 25px;
-            display: flex;
-            align-items: center;
-            gap: 15px;
-            color: var(--primary);
-        }
+    .content-box {
+        background: var(--card-bg);
+        padding: 40px;
+        border-radius: 20px;
+        border: 1px solid rgba(255,255,255,0.05);
+        box-shadow: 0 20px 40px rgba(0,0,0,0.4);
+    }
 
-        .player-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-            gap: 20px;
-            margin-top: 20px;
-            width: 100%;
-        }
+    h2 {
+        font-size: 32px;
+        margin-bottom: 30px;
+        display: flex;
+        align-items: center;
+        gap: 15px;
+        color: var(--primary);
+    }
 
-        .player-card {
-            background: var(--card-bg);
-            border-radius: 15px;
-            padding: 25px;
-            border-top: 4px solid var(--primary);
-            transition: var(--transition);
-            box-shadow: 0 10px 30px rgba(0,0,0,0.2);
-            height: auto;
-        }
+    h2::after {
+        content: '';
+        flex: 1;
+        height: 1px;
+        background: linear-gradient(to right, var(--primary), transparent);
+    }
 
-        .player-card:hover {
-            transform: translateY(-5px);
-            background: #1a261a;
-        }
+    /* Grid for Cards - Mobile Fix Applied */
+    .player-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+        gap: 25px;
+        margin-top: 20px;
+    }
 
-        .player-card strong {
-            display: block;
-            font-size: 22px;
-            color: var(--primary);
-            margin-bottom: 10px;
-            text-transform: uppercase;
-        }
+    .player-card {
+        background: var(--card-bg);
+        border-radius: 15px;
+        padding: 30px;
+        border-top: 4px solid var(--primary);
+        transition: var(--transition);
+        box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+        height: auto; /* Fix for mobile text expansion */
+    }
 
-        .trophy-container {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-            gap: 20px;
-        }
+    .player-card:hover {
+        transform: translateY(-10px);
+        background: #1a261a;
+    }
 
-        .box { padding: 25px; border-radius: 15px; border: 1px solid rgba(255,255,255,0.05); }
-        .box h3 { margin-bottom: 15px; text-transform: uppercase; display: flex; align-items: center; gap: 10px; }
-        .box ul { list-style: none; }
-        .box li { padding: 8px 0; border-bottom: 1px solid rgba(255,255,255,0.1); display: flex; justify-content: space-between; }
+    .player-card strong {
+        display: block;
+        font-size: 24px;
+        color: var(--primary);
+        margin-bottom: 15px;
+        font-weight: 700;
+        text-transform: uppercase;
+    }
 
-        .div { background: linear-gradient(145deg, #0a1f0a, #004d00); border-top: 4px solid var(--primary); }
-        .play { background: linear-gradient(145deg, #1f1f0a, #4d4000); border-top: 4px solid var(--gold); }
-        .cup { background: linear-gradient(145deg, #1f0a0a, #4d0000); border-top: 4px solid var(--red); }
+    /* Trophies */
+    .trophy-container {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+        gap: 20px;
+    }
 
-        .management-list { list-style: none; }
-        .management-list li { padding: 10px 0; display: flex; align-items: flex-start; gap: 10px; }
+    .box {
+        padding: 30px;
+        border-radius: 15px;
+        transition: var(--transition);
+        border: 1px solid rgba(255,255,255,0.05);
+    }
 
-        .media-grid { display: grid; gap: 20px; margin-top: 20px; }
-        iframe { border-radius: 15px; border: 1px solid var(--primary-dark); width: 100%; }
+    .box h3 {
+        margin-bottom: 20px;
+        font-size: 22px;
+        text-transform: uppercase;
+        display: flex;
+        align-items: center;
+        gap: 10px;
+    }
 
-        footer { background: #000; padding: 40px 20px; text-align: center; border-top: 1px solid var(--primary-dark); }
+    .box ul {
+        list-style: none;
+        padding: 0;
+    }
 
-        /* Animation Classes */
-        .fade-in {
-            opacity: 0;
-            transform: translateY(20px);
-            transition: opacity 0.6s ease-out, transform 0.6s ease-out;
-        }
+    .box li {
+        padding: 8px 0;
+        border-bottom: 1px solid rgba(255,255,255,0.1);
+        font-weight: 400;
+        display: flex;
+        justify-content: space-between;
+    }
 
-        .fade-in.visible {
-            opacity: 1;
-            transform: translateY(0);
-        }
+    .div { background: linear-gradient(145deg, #0a1f0a, #004d00); border-top: 4px solid var(--primary); }
+    .play { background: linear-gradient(145deg, #1f1f0a, #4d4000); border-top: 4px solid var(--gold); }
+    .cup { background: linear-gradient(145deg, #1f0a0a, #4d0000); border-top: 4px solid var(--red); }
 
-        @media (max-width: 768px) {
-            .nav-links { display: none; }
-            header { height: 50vh; }
-            .player-grid { grid-template-columns: 1fr; }
-            h2 { font-size: 24px; }
-        }
-    </style>
+    .management-list {
+        list-style: none;
+    }
+
+    .management-list li {
+        padding: 12px 0;
+        display: flex;
+        align-items: flex-start;
+        gap: 15px;
+        border-bottom: 1px solid rgba(255,255,255,0.05);
+    }
+
+    iframe {
+        border-radius: 20px;
+        border: 1px solid var(--primary-dark);
+        box-shadow: 0 10px 30px rgba(0,0,0,0.5);
+    }
+
+    footer {
+        background: #000;
+        padding: 60px 20px;
+        text-align: center;
+        margin-top: 100px;
+        border-top: 1px solid var(--primary-dark);
+    }
+
+    /* Animation */
+    .fade-in {
+        opacity: 0;
+        transform: translateY(30px);
+        transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+    }
+
+    .fade-in.visible {
+        opacity: 1;
+        transform: translateY(0);
+    }
+
+    @media (max-width: 768px) {
+        .nav-links { display: none; }
+        header { height: 50vh; }
+        .content-box { padding: 25px; }
+        header h1 { font-size: 50px; }
+        .player-grid { grid-template-columns: 1fr; }
+    }
+</style>
 </head>
 <body>
 
@@ -211,6 +277,7 @@
             <li><a href="#players">Players</a></li>
             <li><a href="#scandals">History</a></li>
             <li><a href="#trophies">Trophies</a></li>
+            <li><a href="#media">Media</a></li>
         </ul>
     </div>
 </nav>
@@ -223,14 +290,18 @@
 <section id="about" class="fade-in">
     <div class="content-box">
         <h2><i class="fas fa-shield-halved"></i> About the Team</h2>
-        <p>Adamullah was formed in 2021 after Wanyama envisioned creating a team that could dominate the Pro Clubs scene. Persuading Saka and Kante to join him as co-founders, they established <strong>The Council</strong> to manage all operations. They recruited players with talent, personalities, and ambition, forming a squad capable of both brilliance and scandal. The team played at <strong>The Village</strong>, a stadium that witnessed legendary victories and shocking defeats. Over the years, Adamullah became one of the biggest teams, renowned for both its competitive edge and dramatic history.</p>
+        <p>
+            Adamullah was formed in 2021 after Wanyama envisioned creating a team that could dominate the Pro Clubs scene. Persuading Saka and Kante to join him as co-founders, they established <strong>The Council</strong> to manage all operations. They recruited players with talent, personalities, and ambition, forming a squad capable of both brilliance and scandal. The team played at <strong>The Village</strong>, a stadium that witnessed legendary victories and shocking defeats. Over the years, Adamullah became one of the biggest teams, renowned for both its competitive edge and dramatic history.
+        </p>
     </div>
 </section>
 
 <section class="fade-in">
     <div class="content-box">
         <h2><i class="fas fa-map-location-dot"></i> Story Behind the Name</h2>
-        <p>The name "Adamullah" comes from the city where the team was established, symbolizing the club’s roots and pride. It represents not just a location, but the legacy, rivalries, and historical journey that shaped the team over the divisions.</p>
+        <p>
+            The name "Adamullah" comes from the city where the team was established, symbolizing the club’s roots and pride. It represents not just a location, but the legacy, rivalries, and historical journey that shaped the team over the divisions.
+        </p>
     </div>
 </section>
 
@@ -238,46 +309,123 @@
     <div class="content-box">
         <h2><i class="fas fa-users-gear"></i> Management</h2>
         <ul class="management-list">
-            <li><i class="fas fa-circle-check" style="color:var(--primary)"></i> <span><strong>The Council</strong> – Leadership body overseeing the club.</span></li>
-            <li><i class="fas fa-circle-check" style="color:var(--primary)"></i> <span>Original founders: Wanyama (visionary), Saka, Kante.</span></li>
-            <li><i class="fas fa-circle-check" style="color:var(--primary)"></i> <span>2023 – Wanyama & Tunde became owners after dramatic internal changes.</span></li>
-            <li><i class="fas fa-circle-check" style="color:var(--primary)"></i> <span>2026 – Sissoko became sole owner.</span></li>
-            <li><i class="fas fa-circle-check" style="color:var(--primary)"></i> <span>Kante – Team captain throughout all years, still active in 2026.</span></li>
+            <li><i class="fas fa-check-circle" style="color:var(--primary); margin-top:5px;"></i><span><strong>The Council</strong> – Leadership body overseeing the club.</span></li>
+            <li><i class="fas fa-check-circle" style="color:var(--primary); margin-top:5px;"></i><span>Original founders: Wanyama (visionary), Saka, Kante.</span></li>
+            <li><i class="fas fa-check-circle" style="color:var(--primary); margin-top:5px;"></i><span>2023 – Wanyama & Tunde became owners after dramatic internal changes.</span></li>
+            <li><i class="fas fa-check-circle" style="color:var(--primary); margin-top:5px;"></i><span>2026 – Sissoko became sole owner.</span></li>
+            <li><i class="fas fa-check-circle" style="color:var(--primary); margin-top:5px;"></i><span>Kante – Team captain throughout all years, still active in 2026.</span></li>
         </ul>
     </div>
 </section>
 
 <section id="players">
-    <h2 class="fade-in"><i class="fas fa-id-card"></i> Players in History</h2>
+    <h2><i class="fas fa-id-card"></i> Players in History</h2>
     <div class="player-grid">
-        <div class="player-card fade-in"><strong>Wanyama</strong><p>First of the three original owners and the man with the founding idea in 2021. Played primarily as CAM, but also as LW and RW, Wanyama quickly became one of Adamullah’s greatest midfielders, holding the record for the highest assists in the club’s history. He was central to the 2023 and 2024 scandals, including embezzlement schemes, controversial contracts, and involvement in alleged slavery-related player transfers. Rumors of wild parties with Diddy and other high-profile figures circulated during his tenure. Despite off-field controversies, Wanyama excelled on the pitch, winning multiple “Man of the Match” awards and mentoring younger players, blending brilliance, leadership, and drama into a legendary career that defined Adamullah’s early era.</p></div>
-        <div class="player-card fade-in"><strong>Tunde</strong><p>One of the original players since 2021, Tunde’s journey began with promise but was quickly disrupted by an early injury that cut his first season short. He returned in the following year with an average performance, still searching for consistency and impact within the squad. However, everything changed during the 2023–2024 period, where he became deeply involved in the major scandals alongside Wanyama, playing a central role in the takeover and the controversial management era that followed. Despite the chaos off the field, Tunde’s performances on the pitch reached extraordinary levels, transforming him into one of the greatest players in Adamullah’s history. His peak came in 2025, where he achieved a historic milestone by scoring 1,000 goals in a single year, a record that defined his legacy. Off the pitch, his name was repeatedly linked to embezzlement schemes, slavery-related allegations, and high-profile controversies including rumors of involvement in Diddy-linked parties. Tunde’s story is one of transformation, from an injured and average player into a dominant force, while remaining at the center of one of the most scandalous eras in the club’s history.</p></div>
-        <div class="player-card fade-in"><strong>Sissoko</strong><p>One of the original players since 2021, Sissoko began his career as an average performer, showing glimpses of potential but lacking consistency in the early days. In 2022, his talent started to emerge, and he quickly developed into a more confident and skillful player. However, his progress was halted in 2023 after suffering a season-ending injury that kept him away during one of the most chaotic periods in the club’s history. His return in 2024 marked a turning point, as he came back stronger, sharper, and more influential, establishing himself as one of the most skillful and impactful players Adamullah has ever seen. Over the following seasons, he became a crucial figure on the pitch, contributing consistently and playing a key role in the team’s success. Off the field, Sissoko’s story was equally controversial, with multiple lawsuits and allegations surrounding his personal life as he was involved in sleeping with multiple women and sex parties”. In 2026, he made history by purchasing the club and becoming the first sole owner of Adamullah, marking a new era of leadership. His tenure also sparked further controversy, including accusations related to unethical practices in staff recruitment as it was rumored that his all female staff had to sleep with him to get the job. Sissoko’s legacy is defined by his rise from an average player to one of the greatest in club history, combined with a complex and controversial presence off the field.</p></div>
-        <div class="player-card fade-in"><strong>Fayrouz</strong><p>Known as “The Joker” of Adamullah, Fayrouz was one of the most versatile and naturally gifted players in the club’s history. Capable of playing as a defender, attacker, or shooter, there was virtually nothing he could not do on the pitch. Since joining the team, he established himself as one of the most consistent performers throughout the club’s history, delivering high-level performances regardless of the circumstances surrounding the team. His technical ability, creativity, and unpredictability made him a constant threat and a key figure in many of the club’s biggest moments. Off the field, Fayrouz lived a chaotic lifestyle, frequently dealing with drug issues and alcohol problems that often brought controversy and concern to the club as he was arrested mutiple times high and drunk and he had a history of dating strippers. Despite this, he maintained a unique role within the team, even acting at times as an informal news reporter, spreading inside stories and fueling the narrative around Adamullah. What made Fayrouz truly remarkable was his ability to separate his off-field struggles from his on-field performances, as he consistently delivered when it mattered most. His legacy is that of a brilliant, unpredictable figure whose talent and consistency made him one of the greatest and most entertaining players in Adamullah’s history.</p></div>
-        <div class="player-card fade-in"><strong>Saka</strong><p>Co-founder of Adamullah and one of the most influential figures in its early years, Saka was among the best players in 2021 and also played a key managerial role in shaping the team’s structure and identity. His vision and leadership were crucial to the club’s early success, helping build a competitive squad and establish The Council as the governing body. However, everything changed after the 2023 takeover, when he was removed from ownership. Following this, Saka’s passion for the game visibly declined, and his presence on the pitch became increasingly inconsistent. Much like his idol, he became a frequent visitor to the medical room, picking up injuries repeatedly and making rare appearances, sometimes only once every few months. As time went on, his condition worsened,later he was diagnosed with assenal stage 4 constantly sidelined and struggling to maintain fitness. His perspective on the world also became increasingly detached, once famously claiming that Assenal is a top team. Despite his decline, Saka remains a foundational figure in the club’s history, remembered for his early brilliance, leadership, and role in creating Adamullah.</p></div>
-        <div class="player-card fade-in"><strong>Kante</strong><p>The third and final original owner of Adamullah in 2021, Kante was the backbone of the team and its first captain. Known for his unmatched consistency, he spent years performing at a high level, earning respect as one of the most reliable players in the club’s history. He played both as an attacker and midfielder, adapting to the team’s needs while maintaining leadership on and off the pitch. Unlike others, Kante remained largely unshaken by the dramatic 2023 takeover, continuing to play out of pure love for the game even after losing ownership. Over time, however, controversy began to surround him, with rumors emerging about possible steroid use after a sudden and shocking physical transformation. Reports claimed that he grew nearly a foot taller and gained significant weight, changing his style of play and shifting more into an attacking role. Rumors even suggested he was taking his injections in his right side, adding to the speculation, although none of these claims were ever proven. Kante was also involved in a major dispute with Crazy Moon, which ultimately led to Crazy Moon being released from the club. Despite the rumors and surrounding chaos, Kante remained a symbol of dedication and resilience, continuing to lead the team as captain and cementing his legacy as one of the most consistent and enduring figures in Adamullah’s history.</p></div>
-        <div class="player-card fade-in"><strong>Lukaku</strong><p>Public enemy number one of Adamullah, Lukaku was part of the original squad and remained with the club for four turbulent years. While he was expected to be a dominant attacking force, his legacy became defined by chaos, controversy, and unforgettable incidents both on and off the pitch. He became infamous for holding the record of the highest number of balls lost out of play, to the point where it reportedly forced the club to adopt a closed stadium system to prevent constant interruptions and financial losses. His impact extended beyond the club, with rumors suggesting he nearly contributed to financial strain on FIFA due to the sheer number of match balls never recovered after his involvement in play. Lukaku was also at the center of one of the biggest internal scandals in the club’s history, following a heated conflict with Zizo that escalated into a personal feud. The situation reached its peak when Lukaku recorded himself in a scandalous incident involving Zizo’s wife, which sent shockwaves through the team and its supporters. In 2024, tensions reached a breaking point when the club announced his contract extension, sparking public outrage and even leading to a widely circulated moment where Ibrahim Fayek was seen crying live on television. Despite all the controversy, Lukaku remains one of the most talked-about figures in Adamullah’s history, representing a chaotic era that combined poor performances with explosive drama.</p></div>
-        <div class="player-card fade-in"><strong>Musab</strong><p>One of the original players of Adamullah, Musab began his journey in 2021 as an attacking player and contributed as a goal scorer during the club’s early days. While not always the most consistent performer on the pitch, he remained an important figure within the squad due to his understanding of the team and his early involvement in building its identity. Over time, his role began to shift away from purely playing, as he took on responsibilities behind the scenes. By 2023, Musab had risen through the ranks to become assistant manager, then manager, and eventually team director during one of the most controversial periods in the club’s history. His time in management was heavily overshadowed by scandal, as he became directly linked to questionable decisions, including bribery allegations and involvement in financial manipulation schemes. One of the most infamous moments of his tenure was the controversial signing of Zizo in 2024, which was later revealed to be part of a broader embezzlement operation tied to the ownership. Musab’s transition from player to director placed him at the center of the club’s internal chaos, making him a key figure in both its development and its downfall during the scandal era.</p></div>
-        <div class="player-card fade-in"><strong>Zizo</strong><p>Widely regarded as the second worst signing in Adamullah’s history, Zizo’s time at the club was defined by underperformance and constant controversy. Over more than 200 appearances, he managed to score only 7 goals, a record that frustrated both fans and management. Despite his poor output, Zizo carried a massive ego, often clashing with teammates and insisting on his importance within the squad. One of his most infamous moments came after scoring a simple penalty, where he publicly declared himself the best player in the club, leading to heated arguments in the dressing room. His rivalry with Lukaku became one of the most toxic internal conflicts in Adamullah’s history, with repeated confrontations both on and off the pitch. Fans frequently criticized his lack of speed and physical presence, especially for a winger, making him a symbol of the club’s poor recruitment decisions during the scandal era. His time at Adamullah is remembered as a combination of ego, inefficiency, and internal disruption.</p></div>
-        <div class="player-card fade-in"><strong>Crazy Moon</strong><p>A bizarre and controversial figure in Adamullah’s history, Crazy Moon’s career was as short as it was chaotic. After joining the team, he quickly became known not for his footballing ability but for his strange behavior and lack of discipline. His time at the club came to an abrupt end following a major conflict with team captain Kante, which ultimately led to his release. It was later discovered that Crazy Moon had been using AirPods during matches, listening to romantic songs about his lover, despite rumors that he had no actual relationship, adding to the absurdity surrounding his character. Following his departure, he was relegated to playing in a local Sunday league before eventually retiring from football altogether. He then transitioned into content creation, opening a YouTube channel with an unusual format, becoming known as the first creator to film videos showing half of the screen and half of his wall. His legacy at Adamullah remains one of confusion, controversy, and pure unpredictability.</p></div>
-        <div class="player-card fade-in"><strong>Anas</strong><p>Once a La Masia academy reject, Anas joined Adamullah with a point to prove, hoping to show Barcelona what they had missed. His arrival carried expectations of redemption, but his time at the club never fully lived up to that narrative. While he had moments of effort and determination, he struggled to establish himself as a key player within the squad. Off the pitch, Anas faced personal challenges that began to affect his career, as he developed unhealthy habits and a declining lifestyle. Over time, his situation worsened, and he became increasingly disconnected from the team and the sport. His career ultimately came to an early end just two years after joining, following serious health issues linked to his lifestyle, including kidney-related complications. Anas’s story is remembered as a tragic example of lost potential, where a player with something to prove was unable to overcome personal struggles and fulfill the promise he once carried.</p></div>
-        <div class="player-card fade-in"><strong>Defensive Core</strong><p>Stability came from Bullitt, Van Dyka, Zeeshan, Farhana, Yaqub, Afu Labi, and goalkeeper Sunnah Al-Haq. Bullitt, central defender, holds the record for highest-scoring defender. Van Dyka, a female defensive leader, brought resilience and organization. Sunnah Al-Haq, famously recruited via a boat transfer, provided legendary goalkeeping and anchored the defense during turbulent seasons.</p></div>
+        <div class="player-card fade-in">
+            <strong>Wanyama</strong>
+            <p>First of the three original owners and the man with the founding idea in 2021. Played primarily as CAM, but also as LW and RW, Wanyama quickly became one of Adamullah’s greatest midfielders, holding the record for the highest assists in the club’s history. He was central to the 2023 and 2024 scandals, including embezzlement schemes, controversial contracts, and involvement in alleged slavery-related player transfers. Rumors of wild parties with Diddy and other high-profile figures circulated during his tenure. Despite off-field controversies, Wanyama excelled on the pitch, winning multiple “Man of the Match” awards and mentoring younger players, blending brilliance, leadership, and drama into a legendary career that defined Adamullah’s early era.</p>
+        </div>
+
+        <div class="player-card fade-in">
+            <strong>Tunde</strong>
+            <p>One of the original players since 2021, Tunde’s journey began with promise but was quickly disrupted by an early injury that cut his first season short. He returned in the following year with an average performance, still searching for consistency and impact within the squad. However, everything changed during the 2023–2024 period, where he became deeply involved in the major scandals alongside Wanyama, playing a central role in the takeover and the controversial management era that followed. Despite the chaos off the field, Tunde’s performances on the pitch reached extraordinary levels, transforming him into one of the greatest players in Adamullah’s history. His peak came in 2025, where he achieved a historic milestone by scoring 1,000 goals in a single year, a record that defined his legacy. Off the pitch, his name was repeatedly linked to embezzlement schemes, slavery-related allegations, and high-profile controversies including rumors of involvement in Diddy-linked parties. Tunde’s story is one of transformation, from an injured and average player into a dominant force, while remaining at the center of one of the most scandalous eras in the club’s history.</p>
+        </div>
+
+        <div class="player-card fade-in">
+            <strong>Sissoko</strong>
+            <p>One of the original players since 2021, Sissoko began his career as an average performer, showing glimpses of potential but lacking consistency in the early days. In 2022, his talent started to emerge, and he quickly developed into a more confident and skillful player. However, his progress was halted in 2023 after suffering a season-ending injury that kept him away during one of the most chaotic periods in the club’s history. His return in 2024 marked a turning point, as he came back stronger, sharper, and more influential, establishing himself as one of the most skillful and impactful players Adamullah has ever seen. Over the following seasons, he became a crucial figure on the pitch, contributing consistently and playing a key role in the team’s success. Off the field, Sissoko’s story was equally controversial, with multiple lawsuits and allegations surrounding his personal life as he was involved in sleeping with multiple women and sex parties”. In 2026, he made history by purchasing the club and becoming the first sole owner of Adamullah, marking a new era of leadership. His tenure also sparked further controversy, including accusations related to unethical practices in staff recruitment as it was rumored that his all female staff had to sleep with him to get the job. Sissoko’s legacy is defined by his rise from an average player to one of the greatest in club history, combined with a complex and controversial presence off the field.</p>
+        </div>
+
+        <div class="player-card fade-in">
+            <strong>Fayrouz</strong>
+            <p>Known as “The Joker” of Adamullah, Fayrouz was one of the most versatile and naturally gifted players in the club’s history. Capable of playing as a defender, attacker, or shooter, there was virtually nothing he could not do on the pitch. Since joining the team, he established himself as one of the most consistent performers throughout the club’s history, delivering high-level performances regardless of the circumstances surrounding the team. His technical ability, creativity, and unpredictability made him a constant threat and a key figure in many of the club’s biggest moments. Off the field, Fayrouz lived a chaotic lifestyle, frequently dealing with drug issues and alcohol problems that often brought controversy and concern to the club as he was arrested mutiple times high and drunk and he had a history of dating strippers. Despite this, he maintained a unique role within the team, even acting at times as an informal news reporter, spreading inside stories and fueling the narrative around Adamullah. What made Fayrouz truly remarkable was his ability to separate his off-field struggles from his on-field performances, as he consistently delivered when it mattered most. His legacy is that of a brilliant, unpredictable figure whose talent and consistency made him one of the greatest and most entertaining players in Adamullah’s history.</p>
+        </div>
+
+        <div class="player-card fade-in">
+            <strong>Saka</strong>
+            <p>Co-founder of Adamullah and one of the most influential figures in its early years, Saka was among the best players in 2021 and also played a key managerial role in shaping the team’s structure and identity. His vision and leadership were crucial to the club’s early success, helping build a competitive squad and establish The Council as the governing body. However, everything changed after the 2023 takeover, when he was removed from ownership. Following this, Saka’s passion for the game visibly declined, and his presence on the pitch became increasingly inconsistent. Much like his idol, he became a frequent visitor to the medical room, picking up injuries repeatedly and making rare appearances, sometimes only once every few months. As time went on, his condition worsened,later he was diagnosed with assenal stage 4 constantly sidelined and struggling to maintain fitness. His perspective on the world also became increasingly detached, once famously claiming that Assenal is a top team. Despite his decline, Saka remains a foundational figure in the club’s history, remembered for his early brilliance, leadership, and role in creating Adamullah.</p>
+        </div>
+
+        <div class="player-card fade-in">
+            <strong>Kante</strong>
+            <p>The third and final original owner of Adamullah in 2021, Kante was the backbone of the team and its first captain. Known for his unmatched consistency, he spent years performing at a high level, earning respect as one of the most reliable players in the club’s history. He played both as an attacker and midfielder, adapting to the team’s needs while maintaining leadership on and off the pitch. Unlike others, Kante remained largely unshaken by the dramatic 2023 takeover, continuing to play out of pure love for the game even after losing ownership. Over time, however, controversy began to surround him, with rumors emerging about possible steroid use after a sudden and shocking physical transformation. Reports claimed that he grew nearly a foot taller and gained significant weight, changing his style of play and shifting more into an attacking role. Rumors even suggested he was taking his injections in his right side, adding to the speculation, although none of these claims were ever proven. Kante was also involved in a major dispute with Crazy Moon, which ultimately led to Crazy Moon being released from the club. Despite the rumors and surrounding chaos, Kante remained a symbol of dedication and resilience, continuing to lead the team as captain and cementing his legacy as one of the most consistent and enduring figures in Adamullah’s history.</p>
+        </div>
+
+        <div class="player-card fade-in">
+            <strong>Lukaku</strong>
+            <p>Public enemy number one of Adamullah, Lukaku was part of the original squad and remained with the club for four turbulent years. While he was expected to be a dominant attacking force, his legacy became defined by chaos, controversy, and unforgettable incidents both on and off the pitch. He became infamous for holding the record of the highest number of balls lost out of play, to the point where it reportedly forced the club to adopt a closed stadium system to prevent constant interruptions and financial losses. His impact extended beyond the club, with rumors suggesting he nearly contributed to financial strain on FIFA due to the sheer number of match balls never recovered after his involvement in play. Lukaku was also at the center of one of the biggest internal scandals in the club’s history, following a heated conflict with Zizo that escalated into a personal feud. The situation reached its peak when Lukaku recorded himself in a scandalous incident involving Zizo’s wife, which sent shockwaves through the team and its supporters. In 2024, tensions reached a breaking point when the club announced his contract extension, sparking public outrage and even leading to a widely circulated moment where Ibrahim Fayek was seen crying live on television. Despite all the controversy, Lukaku remains one of the most talked-about figures in Adamullah’s history, representing a chaotic era that combined poor performances with explosive drama.</p>
+        </div>
+
+        <div class="player-card fade-in">
+            <strong>Musab</strong>
+            <p>One of the original players of Adamullah, Musab began his journey in 2021 as an attacking player and contributed as a goal scorer during the club’s early days. While not always the most consistent performer on the pitch, he remained an important figure within the squad due to his understanding of the team and his early involvement in building its identity. Over time, his role began to shift away from purely playing, as he took on responsibilities behind the scenes. By 2023, Musab had risen through the ranks to become assistant manager, then manager, and eventually team director during one of the most controversial periods in the club’s history. His time in management was heavily overshadowed by scandal, as he became directly linked to questionable decisions, including bribery allegations and involvement in financial manipulation schemes. One of the most infamous moments of his tenure was the controversial signing of Zizo in 2024, which was later revealed to be part of a broader embezzlement operation tied to the ownership. Musab’s transition from player to director placed him at the center of the club’s internal chaos, making him a key figure in both its development and its downfall during the scandal era.</p>
+        </div>
+
+        <div class="player-card fade-in">
+            <strong>Zizo</strong>
+            <p>Widely regarded as the second worst signing in Adamullah’s history, Zizo’s time at the club was defined by underperformance and constant controversy. Over more than 200 appearances, he managed to score only 7 goals, a record that frustrated both fans and management. Despite his poor output, Zizo carried a massive ego, often clashing with teammates and insisting on his importance within the squad. One of his most infamous moments came after scoring a simple penalty, where he publicly declared himself the best player in the club, leading to heated arguments in the dressing room. His rivalry with Lukaku became one of the most toxic internal conflicts in Adamullah’s history, with repeated confrontations both on and off the pitch. Fans frequently criticized his lack of speed and physical presence, especially for a winger, making him a symbol of the club’s poor recruitment decisions during the scandal era. His time at Adamullah is remembered as a combination of ego, inefficiency, and internal disruption.</p>
+        </div>
+
+        <div class="player-card fade-in">
+            <strong>Crazy Moon</strong>
+            <p>A bizarre and controversial figure in Adamullah’s history, Crazy Moon’s career was as short as it was chaotic. After joining the team, he quickly became known not for his footballing ability but for his strange behavior and lack of discipline. His time at the club came to an abrupt end following a major conflict with team captain Kante, which ultimately led to his release. It was later discovered that Crazy Moon had been using AirPods during matches, listening to romantic songs about his lover, despite rumors that he had no actual relationship, adding to the absurdity surrounding his character. Following his departure, he was relegated to playing in a local Sunday league before eventually retiring from football altogether. He then transitioned into content creation, opening a YouTube channel with an unusual format, becoming known as the first creator to film videos showing half of the screen and half of his wall. His legacy at Adamullah remains one of confusion, controversy, and pure unpredictability.</p>
+        </div>
+
+        <div class="player-card fade-in">
+            <strong>Anas</strong>
+            <p>Once a La Masia academy reject, Anas joined Adamullah with a point to prove, hoping to show Barcelona what they had missed. His arrival carried expectations of redemption, but his time at the club never fully lived up to that narrative. While he had moments of effort and determination, he struggled to establish himself as a key player within the squad. Off the pitch, Anas faced personal challenges that began to affect his career, as he developed unhealthy habits and a declining lifestyle. Over time, his situation worsened, and he became increasingly disconnected from the team and the sport. His career ultimately came to an early end just two years after joining, following serious health issues linked to his lifestyle, including kidney-related complications. Anas’s story is remembered as a tragic example of lost potential, where a player with something to prove was unable to overcome personal struggles and fulfill the promise he once carried.</p>
+        </div>
+
+        <div class="player-card fade-in">
+            <strong>Defensive Core</strong>
+            <p>Stability came from Bullitt, Van Dyka, Zeeshan, Farhana, Yaqub, Afu Labi, and goalkeeper Sunnah Al-Haq. Bullitt, central defender, holds the record for highest-scoring defender. Van Dyka, a female defensive leader, brought resilience and organization. Sunnah Al-Haq, famously recruited via a boat transfer, provided legendary goalkeeping and anchored the defense during turbulent seasons.</p>
+        </div>
     </div>
 </section>
 
 <section id="scandals" class="fade-in">
     <div class="content-box">
         <h2><i class="fas fa-triangle-exclamation"></i> Scandals & Controversies</h2>
-        <p>Adamullah’s history is riddled with drama and off-field scandals. In 2023, Wanyama and Tunde forced the removal of original owners Saka and Kante to seize control, marking the start of an era of financial manipulation, embezzlement, and controversial management. Players endured unpaid salaries, delayed bonuses, and exploitative conditions, while transfers of key players like Zizo, Crazy Moon, Musab, and Lukaku were tied to schemes for personal gain. Crazy Moon, signed in 2022 alongside Zizo, clashed with Kante and was sold the following year, while Zizo’s return exposed further irregularities. Musab, promoted to Team Director in 2023, oversaw transfers and contracts that often bypassed legality, including alleged coercive player recruitment and transfers via boats without proper contracts. Allegations of slavery-like treatment and fraudulent salary practices plagued the club, sparking lawsuits and settlements that revealed systemic corruption. Notably, players such as Abdi, Rashidi, and Atencho were reportedly acquired under coercive conditions and transported by boat, with Abdi’s horrific 2024 season ending in rumors of his untimely death. Lukaku’s contract extension caused public outrage, and numerous backdoor financial manipulations implicated the owners and management. Despite the chaos, the team achieved remarkable on-field success, with Sissoko, Tunde, Wanyama, Kante, Fayrouz, and others maintaining competitive performance and securing trophies. This scandalous period, filled with both brilliance and controversy, shaped Adamullah’s identity, forging resilience among its athletes and cementing the club as a legendary institution marked by both triumph and infamy.</p>
+        <p>
+            Adamullah’s history is riddled with drama and off-field scandals. In 2023, Wanyama and Tunde forced the removal of original owners Saka and Kante to seize control, marking the start of an era of financial manipulation, embezzlement, and controversial management. Players endured unpaid salaries, delayed bonuses, and exploitative conditions, while transfers of key players like Zizo, Crazy Moon, Musab, and Lukaku were tied to schemes for personal gain. Crazy Moon, signed in 2022 alongside Zizo, clashed with Kante and was sold the following year, while Zizo’s return exposed further irregularities. Musab, promoted to Team Director in 2023, oversaw transfers and contracts that often bypassed legality, including alleged coercive player recruitment and transfers via boats without proper contracts. Allegations of slavery-like treatment and fraudulent salary practices plagued the club, sparking lawsuits and settlements that revealed systemic corruption. Notably, players such as Abdi, Rashidi, and Atencho were reportedly acquired under coercive conditions and transported by boat, with Abdi’s horrific 2024 season ending in rumors of his untimely death. Lukaku’s contract extension caused public outrage, and numerous backdoor financial manipulations implicated the owners and management. Despite the chaos, the team achieved remarkable on-field success, with Sissoko, Tunde, Wanyama, Kante, Fayrouz, and others maintaining competitive performance and securing trophies. This scandalous period, filled with both brilliance and controversy, shaped Adamullah’s identity, forging resilience among its athletes and cementing the club as a legendary institution marked by both triumph and infamy.
+        </p>
     </div>
 </section>
 
 <section id="trophies" class="fade-in">
     <h2><i class="fas fa-trophy"></i> Trophies & Achievements</h2>
     <div class="trophy-container">
-        <div class="box div"><h3>Divisions</h3><ul><li>Division 10 <span>4x</span></li><li>Division 9 <span>3x</span></li><li>Division 8 <span>5x</span></li><li>Division 7 <span>2x</span></li><li>Division 6 <span>3x</span></li><li>Division 5 <span>1x</span></li><li>Division 4 <span>1x</span></li><li>Division 3 <span>1x</span></li><li>Division 2 <span>Promoted</span></li><li>Division 1 <span>Promoted</span></li><li>Elite <span>Not reached</span></li></ul></div>
-        <div class="box play"><h3>Playoffs</h3><ul><li>Division 5 <span>Gold</span></li><li>Division 3–5 <span>Silver</span></li><li>Division 2 <span>Bronze</span></li></ul></div>
-        <div class="box cup"><h3>Cups</h3><ul><li>No Rules Cup <span>1x</span></li><li>EA Cup <span>2x</span></li></ul></div>
+        <div class="box div">
+            <h3>Divisions <i class="fas fa-ranking-star"></i></h3>
+            <ul>
+                <li>Division 10 <span>4x</span></li>
+                <li>Division 9 <span>3x</span></li>
+                <li>Division 8 <span>5x</span></li>
+                <li>Division 7 <span>2x</span></li>
+                <li>Division 6 <span>3x</span></li>
+                <li>Division 5 <span>1x</span></li>
+                <li>Division 4 <span>1x</span></li>
+                <li>Division 3 <span>1x</span></li>
+                <li>Division 2 <span>Promoted</span></li>
+                <li>Division 1 <span>Promoted</span></li>
+                <li>Elite <span>Not reached</span></li>
+            </ul>
+        </div>
+        <div class="box play">
+            <h3>Playoffs <i class="fas fa-medal"></i></h3>
+            <ul>
+                <li>Division 5 <span>Gold</span></li>
+                <li>Division 3–5 <span>Silver</span></li>
+                <li>Division 2 <span>Bronze</span></li>
+            </ul>
+        </div>
+        <div class="box cup">
+            <h3>Cups <i class="fas fa-crown"></i></h3>
+            <ul>
+                <li>No Rules Cup <span>1x</span></li>
+                <li>EA Cup <span>2x</span></li>
+            </ul>
+        </div>
     </div>
 </section>
 
